@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "kojotApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Kojot leskovacki rostilj</title>
+
+	<link rel="icon" href="img/kojot.ico">
+	
+	<!-- back to the top -->
+	<link rel="stylesheet" href="back-to-top/css/style.css">
+	<link rel="stylesheet" href="back-to-top/css/reset.css">
+	<!-- back to the top -->
+	
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row row-header">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center">
+				<h1 class="h1-header">FAST FOOD KOJOT</h1>
+				<h2 class="h2-header">LESKOVAČKI ROŠTILJ</h2>
+				<img src="img/kojot-logo.jpg" alt="Kojot" class="img-header">
+			</div>
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+				<a href=""><i class="fa fa-google pull-right" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-facebook-official pull-right" aria-hidden="true"></i></a>
+			</div>
+		</div>
+
+		<!-- meni -->
+		<div class="row">
+			<nav class="navbar navbar-default navbar-kojot" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapseOnClick">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarCollapseOnClick">
+					<ul class="nav navbar-nav">
+						<li><a href="#/onama">O NAMA</a></li>
+						<li><a href="#/rostilj-na-porcije">JELA SA ROŠTILJA NA PORCIJE</a></li>
+						<li><a href="#/rostilj-na-kilo">ROŠTILJ NA KILO</a></li>
+						<li><a href="#/gladni-kojot">GLADNI KOJOT</a></li>
+						<li><a href="#/dostava">DOSTAVA</a></li>
+						<li><a href="#/kontakt">KONTAKT</a></li>
+					</ul>
+				</div>
+
+			</nav>
+		</div>
+		<!-- meni -->
+		
+		<ng-view></ng-view>
+	<div class="row row-footer">
+		<div class="col-lg-4 col-md-4 col-sm-3 col-xs-2">
+			
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+			<h3 class="h-white text-center p-white">RADNO VREME</h3>
+			<p class="pull-left text-center p-white">PON - SUB
+			<br>od 9:00h do 02:00h</p>
+			<p class="pull-right text-center p-white">NEDELJA
+			<br>od 10:00h do 12:00h</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-3 col-xs-2">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p class="pull-right p-white p-small">Milan Dukic Development [ ® ] </p>
+		</div>
+	</div>
+	</div><!-- kontejner -->
+	
+<!--scroll to the top button -->
+	<a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
+<!--scroll to the top button -->
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<!-- scroll to the top scripts -->
+	<script src="back-to-top/js/top.js"></script>
+	<script src="back-to-top/js/modernizr.js"></script>
+	<!-- scroll to the top scripts -->
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
